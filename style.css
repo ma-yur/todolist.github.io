@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( 112.7deg,  rgba(253,185,83,1) 11.4%, rgba(255,138,0,1) 70.2% );
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.65 rem ;
+}
+.container{
+    width: 700px;
+    margin:0 auto;
+
+}
+.toDoTitle{
+    width:700px;
+    /* margin:0 auto; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    height:20vh;
+}
+.form{
+    width:700px;
+    /* margin:0 auto; */
+    height: 90px;
+    /* background-color: black; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:5vh;
+}
+.toDoInput{
+    height:30px;
+    width:700;
+}
+.toDoButton,.toDoInput{
+    height:40px;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-style: none;
+    transition: all 0.3s ease ;
+   
+}
+.toDoButton{
+    color:coral;
+    background-color:wheat;
+    cursor: pointer;
+}
+.toDoButton:hover{
+    
+    color:wheat;
+    background-color:coral;
+}
+.toDoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.toDoItems{
+    min-width: 90%;
+    list-style: none;
+}
+.toDo{
+    background-color:white;
+    color:black;
+    margin:1rem;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:1rem;
+    border-radius: 3px;
+    transition: all 1s ease;
+}
+.toDo li{
+    flex:1;
+}
+
+.trashbtn ,.completebtn{
+    background-color: coral;
+    padding:1rem;
+    height:100%;
+    border-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.completebtn{
+    background-color: rgb(209, 241, 62);
+}
+.trashbtn{
+    background-color: rgba(230, 77, 31, 0.979);
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border:none;
+}
+.select{
+    margin:1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+select{
+    color:peru;
+    width:10rem;
+    cursor: pointer;
+    padding:1rem;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:coral;
+    padding:1rem;
+    pointer-events: none;
+
+}
